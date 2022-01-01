@@ -6,7 +6,8 @@
   "extends": [
     "airbnb-base",
     "eslint:recommended",
-    "plugin:@typescript-eslint/recommended"
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/typescript"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -15,6 +16,16 @@
   },
   "plugins": ["@typescript-eslint"],
   "rules": {
-    "radix": "off"
+    "radix": "off",
+    "no-console": "off",
+    "import/extensions": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"],
+        "extensions": [".js", ".ts"]
+      }
+    }
   }
 }

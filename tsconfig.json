@@ -1,20 +1,14 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "module": "ESNext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
     "isolatedModules": true,
+    "strict": true,
+    "module": "esnext",
+    "lib": ["ES2019"],
     "noEmit": true,
-    "outDir": "dist",
-    "sourceMap": true
+    "moduleResolution": "node",
+    "skipLibCheck": true
   },
-  "lib": ["es2015"]
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules/**/*", "dist/**/*"]
 }
