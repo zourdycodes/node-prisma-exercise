@@ -19,7 +19,7 @@ export interface TypedRequestBody<T> extends Request {
 const router = Router();
 const { post, user } = new PrismaClient();
 
-router.get('/:user_id', async (req: Request, res: Response) => {
+router.get('/:userId', async (req: Request, res: Response) => {
   const { userId } = req.params as IParams;
 
   const posts = await post.findMany({
