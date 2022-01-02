@@ -46,3 +46,5 @@ router.post(
     return res.json(newUser);
   }
 );
+
+export default router;
