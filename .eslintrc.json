@@ -18,7 +18,8 @@
   "rules": {
     "radix": "off",
     "no-console": "off",
-    "import/extensions": "off"
+    "import/extensions": "off",
+    "comma-dangle": "off"
   },
   "settings": {
     "import/resolver": {

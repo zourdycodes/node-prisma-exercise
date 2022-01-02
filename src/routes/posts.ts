@@ -1,20 +1,6 @@
 import { Router, Request, Response } from 'express';
 import { PrismaClient } from '@prisma/client';
-
-import { ParsedUrlQuery } from 'querystring';
-
-export interface IParams extends ParsedUrlQuery {
-  userId: string;
-}
-
-export interface IPostData {
-  title: string;
-  userId: number;
-  content: string;
-}
-export interface TypedRequestBody<T> extends Request {
-  body: T;
-}
+import { IParams, IPostData, TypedRequestBody } from '../types';
 
 const router = Router();
 const { post, user } = new PrismaClient();
