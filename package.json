@@ -2,9 +2,9 @@
   "name": "node-prisma",
   "version": "1.0.0",
   "description": "",
-  "main": "src/app.js",
+  "main": "bin/app.js",
   "scripts": {
-    "start": "tsc && nodemon dist/app.js",
+    "start": "tsc && nodemon bin/app.js",
     "lint": "eslint . --ext .ts && prettier --write",
     "prettier:prisma": "prettier --write '**/*.prisma'"
   },

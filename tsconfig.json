@@ -1,14 +1,13 @@
 {
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
-    "isolatedModules": true,
-    "strict": true,
-    "module": "esnext",
-    "lib": ["ES2019"],
-    "noEmit": true,
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "target": "es6",
     "moduleResolution": "node",
-    "skipLibCheck": true
+    "sourceMap": true,
+    "outDir": "bin"
   },
+  "lib": ["es2015"],
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules/**/*", "dist/**/*"]
 }
